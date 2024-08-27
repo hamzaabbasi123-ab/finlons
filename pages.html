@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Loan Application</title>
+    <style>
+        /* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section with Background Image */
+.header-section {
+    background-image: url('laptopboy.webp'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section h1 {
+    color: #fff;
+    font-size: 48px;
+    background-color: rgba(72, 201, 252, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Apply Button */
+.apply-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #00bfff; /* Sky blue hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-section h1 {
+        font-size: 36px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-section h1 {
+        font-size: 28px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Finloans Logo">
+                <span>Finloans</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="loan.html">Loan</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pages.html">Pages</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+                   
+    <button class="menu-btn" id="menu-btn">Menu</button>
+    <nav class="navigation" id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loan.html">Loan</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact-info">
+        <span>+10 673 567 367</span>
+        <a href="#" class="apply-button">Apply For A Loan</a>
+    </div>
+</div>
+
+</header>
+    <!-- Header Section with Background Image -->
+    <section class="header-section">
+        <div class="header-content">
+            <h1>Apply now</h1>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="loan-amount">Loan Amount</label>
+                <input type="number" id="loan-amount" name="loan-amount" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Duration</label>
+                <input type="text" id="duration" name="duration" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="apply-button">Apply Now</button>
+        </form>
+    </section>
+     <script src="script.js"></script>
+</body>
+</html>

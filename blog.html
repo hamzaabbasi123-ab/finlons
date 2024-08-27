@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Loan Application</title>
+    <style>
+        /* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section with Background Image */
+.header-section {
+    background-image: url('laptopboy.webp'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section h1 {
+    color: #fff;
+    font-size: 48px;
+    background-color: rgba(72, 201, 252, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-section h1 {
+        font-size: 36px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-section h1 {
+        font-size: 28px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+}
+.blog-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 90px;
+}
+
+.blog-content {
+  display: flex;
+  width: 100%;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  width: 70%;
+}
+
+.blog-post img {
+  width: 86%;
+  height: 60%;
+}
+
+.blog-post h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.blog-post h1:hover{
+    color: rgb(0, 247, 255);
+}
+.blog-post p {
+  font-size: 16px;
+  color: #555;
+}
+
+.blog-post span {
+  font-size: 14px;
+  color: gray;
+}
+
+.sidebar {
+  width: 30%;
+  padding-left: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.search-btn {
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 100px;
+}
+
+.search-btn:hover {
+  background-color: rgb(0, 191, 255);
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 50px;
+}
+/* Instagram feed styling */
+.instagram-feed {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 50px;
+}
+
+.instagram-feed img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/* Responsive styling for mobile screens */
+@media screen and (max-width: 768px) {
+  /* Stack the blog post and sidebar vertically */
+  .blog-section {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  /* Make blog post and sidebar full width */
+  .blog-grid, .sidebar {
+    width: 100%;
+  }
+
+  /* Add some space between the blog post and the sidebar */
+  .sidebar {
+    margin-top: 20px;
+  }
+
+  /* Adjust search button position */
+  .search-btn {
+    margin-left: 30px;
+    width: 50%;
+  }
+
+  /* Instagram feed layout change for smaller screens */
+  .instagram-feed {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .blog-post img{
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further font size adjustments for smaller mobile devices */
+  .blog-post h1 {
+    font-size: 20px;
+  }
+  .blog-post img{
+    height: 30%;
+  }
+  .blog-post p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .search-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .instagram-feed img {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(255, 250, 250);
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #000000;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #000000;
+}
+.footer-bottom span {
+    color: rgb(237, 11, 11);
+}
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 8px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons a img {
+        width: 25px;
+        height: 25px;
+    }
+}
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Finloans Logo">
+                <span>Finloans</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="loan.html">Loan</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pages.html">Pages</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+                   
+    <button class="menu-btn" id="menu-btn">Menu</button>
+    <nav class="navigation" id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loan.html">Loan</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact-info">
+        <span>+10 673 567 367</span>
+        <a href="#" class="apply-button">Apply For A Loan</a>
+    </div>
+</div>
+
+</header>
+    <!-- Header Section with Background Image -->
+    <section class="header-section">
+        <div class="header-content">
+            <h1>Blog</h1>
+        </div>
+    </section>
+    <section class="blog-section">
+        <div class="blog-content">
+          <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <div class="blog-post">
+              <img src="https://th.bing.com/th/id/R.a13372af2b5b3050ff89c184ebfa926b?rik=pXCVF7mNsNB6YA&pid=ImgRaw&r=0" alt="Blog Image 1">
+              <h1>Google inks pact for new 35-storey office</h1>
+              <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it <br>first without heaven in place seed it second morning saying</p> <br>
+              <span>Travel, Lifestyle | 03 Comments</span>
+            </div>
+      
+            <!-- Blog Post 2 -->
+            <div class="blog-post">
+              <img src="https://cdn.britannica.com/08/177308-050-94D9D6BE/Food-Pizza-Basil-Tomato.jpg" alt="Blog Image 2">
+              <h1>Google inks pact for new 35-storey office</h1>
+              <p>That dominion stars lights dominion divide years for fourth have don't stars is that  he earth it <br>first without heaven in place seed it second morning saying</p> <br>
+              <span>Travel, Lifestyle | 03 Comments</span>
+            </div>
+      
+            <!-- Blog Post 3 -->
+            <div class="blog-post">
+              <img src="https://th.bing.com/th/id/OIP.5OfvmMT814y1pOJxf_qGnQHaE8?rs=1&pid=ImgDetMain" alt="Blog Image 3">
+              <h1>Google inks pact for new 35-storey office</h1>
+              <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it <br>first without heaven in place seed it second morning saying</p> <br>
+              <span>Travel, Lifestyle | 03 Comments</span>
+            </div>
+      
+            <!-- Blog Post 4 -->
+            <div class="blog-post">
+              <img src="https://th.bing.com/th/id/OIP.NBQc-bz-Xm3CpVIDFOU6BAAAAA?rs=1&pid=ImgDetMain" alt="Blog Image 4">
+              <h1>Google inks pact for new 35-storey office</h1>
+              <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it <br> first without heaven in place seed it second morning saying</p> <br>
+              <span>Travel, Lifestyle | 03 Comments</span>
+            </div>
+          </div>
+      
+          <aside class="sidebar">
+            <div class="search-bar">
+              <input type="text" placeholder="Search...">
+              <button class="search-btn">Search</button>
+            </div>
+            <h2>Instagram Feeds</h2>
+            <!-- Instagram feeds will go here -->
+            <div class="instagram-feed">
+                <img src="https://th.bing.com/th/id/R.a13372af2b5b3050ff89c184ebfa926b?rik=pXCVF7mNsNB6YA&pid=ImgRaw&r=0" alt="Blog Image 1" alt="Instagram Image 1">
+                <img src="https://th.bing.com/th/id/OIP.NBQc-bz-Xm3CpVIDFOU6BAAAAA?rs=1&pid=ImgDetMain" alt="Instagram Image 2">
+                <img src="https://cdn.britannica.com/08/177308-050-94D9D6BE/Food-Pizza-Basil-Tomato.jpg" alt="Instagram Image 3">
+                <img src="https://th.bing.com/th/id/OIP.5OfvmMT814y1pOJxf_qGnQHaE8?rs=1&pid=ImgDetMain" alt="Instagram Image 4">
+                
+              </div>
+          </aside>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="logo">
+                    <img src="logo.png" alt="Finloans Logo">
+                    <span>Finloans</span>
+                    
+                </div>
+            
+        </div>
+      <div class="footer-column">
+                
+        <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Rooms</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Our Location</a></li>
+                <li><a href="#">The Hosts</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Restaurant</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Info</h3>
+            <p>Address: 98 West 21th Street, Suite 721 New York NY 10016</p>
+            <p>Phone: (+1) 435 3533</p>
+            <p>Email: info@yourdomain.com</p>
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2024 All rights reserved | This template is made with <span> ❤</span> by Colorlib</p>
+        
+        <div class="social-icons">
+            <a href="#"><img src="https://th.bing.com/th/id/R.ac7c4437586fd33b6b0f65925408b0ad?rik=6FfGDRFJujUh8g&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2013%2f01%2ffacebook-icon-black-circle_155320.png&ehk=BuMAJhlSegbPE3BBoW22OQEsHZbMWclvDlUgbZjUMGA%3d&risl=&pid=ImgRaw&r=0" alt="Facebook"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.9_ZXseiaB1tgYquikdl68AHaFj?w=268&h=200&c=7&r=0&o=5&dpr=1.7&pid=1.7" alt="Instagram"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.VsqHoEuY7p-i84-_MHWGkAHaHw?rs=1&pid=ImgDetMain" alt="YouTube"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.Vr8DfHIHQWd3rUGnO20uOgHaHa?w=172&h=180&c=7&r=0&o=5&dpr=1.7&pid=1.7" alt="Twitter"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.eb41Yo7b_b1DPmvsgGqyPgHaHa?w=162&h=180&c=7&r=0&o=5&dpr=1.7&pid=1.7" alt="Indeed"></a>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
+     <script src="script.js"></script>
+</body>
+</html>
